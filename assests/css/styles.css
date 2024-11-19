@@ -99,7 +99,50 @@ header{
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgb(0 0 0 0.5);
     border-radius: 4px;
+    overflow: hidden;
+    transition: transform .5s ease, height .2s ease;
+    transform: scale(0);
 }
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+.wrapper .box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.wrapper.active .box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .box.register {
+    position: absolute;
+    transform: translateX(400px);
+}
+
+.wrapper.active .box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+    transition: none;
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 45px;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
 .input-box{
     position: relative;
     width: 100%;
@@ -151,7 +194,13 @@ header{
     margin-right: 3px;
 }
 .remember-forgot a{
+    color: #162938;
     text-decoration: none;
+    font-weight: 600;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
 }
 .btn{
     width: 100%;
@@ -166,5 +215,18 @@ header{
     font-weight: 500;
 }
 .register{
-    margin-top: 10px;
+    font-size: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
 }
+
+.register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover {
+    text-decoration: underline;
+}
+
