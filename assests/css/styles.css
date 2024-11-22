@@ -9,18 +9,61 @@
 }
 :root{
     --bg-color: #fff;
-    --text-color: #668B8B;
+    --text-color: black;
     --second-color: #5a7184;
     --main-color: #6e54fa;
     --big-font: 6rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
+    --primary-color: #80ee98;
+    --max-width:1200px;
 }
 body{
     position: absolute;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+.header2__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding-block: 8rem 2rem;
+    padding-inline: 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.header__image {
+    position:relative;
+    isolation: isolate;
+
+}
+
+.header__image::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    aspect-ratio: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50, -50%);
+    /*background-image: url("/assests/img/bg-img.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    opacity: 0.5;
+    z-index: -1;*/
+}
+
+.header__image img {
+    max-width: 520px;
+    margin-inline: auto;
+ }
+
+
+
+
+
 header{
     position: fixed;
     top: 0;
@@ -33,6 +76,11 @@ header{
     justify-content: space-between;
     background: transparent;
     transition: ease .40s;
+    background-color: var(--primary-color);
+}
+img {
+    display: flex;
+    width: 100%;
 }
 .logo{
     font-size: 55px;
@@ -63,7 +111,7 @@ header{
     width: 120px;
     height: 50px;
     background: rgb(233, 236, 245);
-    color: var(--text-color);
+    color:#073a4b;
     border: 4px solid;
     outline: none;
     border-radius: 8px;
@@ -230,3 +278,12 @@ header{
     text-decoration: underline;
 }
 
+.header2__container {
+    padding-bottom: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.header__image {
+    grid-area: 1/2/2/3;
+}
