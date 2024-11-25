@@ -19,3 +19,8 @@ nutlogin.addEventListener('click', ()=> {
 thoatlogin.addEventListener('click', ()=> {
     warpper.classList.remove('active-popup');
 });
+const header = document.querySelector("header");
+
+window.addEventListener ("scroll", function() {
+    header.classList.toggle ("sticky", window.scrollY > 0);
+});

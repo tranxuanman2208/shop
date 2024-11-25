@@ -8,24 +8,23 @@
         <link href="./fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <a href="#" class="logo">Travel</a>
-            <div class="menu-icon" id="menu-icon"><i class="fa-solid fa-list"></i></div>
+        <header class="sticky">
+            <h1 class="logo">Travel</h1>
             <ul class="navbar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#packf">Package</a></li>
-                <li><a href="#des">Destination</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <button class="btn-log"><h2>Login</h2></button>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#packf">Gói du lịch</a></li>
+                <li><a href="#des">Địa điểm</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+                <button class="btn-log"><h2>Đăng nhập</h2></button>
             </ul>
         </header>
-        <div class="wrapper">
+        <section class="home">
+            <div class="wrapper">
             <span class="icon-close">
                 <i class="fa-regular fa-circle-xmark"></i>
             </span>
-           
             <div class="box login">
-                <h2>Login</h2>
+                <h2>Đăng nhập</h2>
                 <form action="#">
                     <div class="input-box">
                         <span class="icon"><i class="fa-solid fa-envelope"></i></span>
@@ -35,26 +34,25 @@
                     <div class="input-box">
                         <span class="icon"><i class="fa-solid fa-lock"></i></span>
                         <input type="password" required>
-                        <label>Password</label>
+                        <label>Mật khẩu</label>
                     </div>
                     <div class="remember-forgot">
-                        <label><input type="checkbox">Remember me</label>
-                        <a href="#">Forgot password?</a>
+                        <label><input type="checkbox">Ghi nhớ đăng nhập</label>
+                        <a href="#">Quên mật khẩu?</a>
                     </div>
                     <button type="submit" class="btn">Login</button>
                     <div class="register">
-                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        <p>Bạn chưa có tài khoản?<a href="#" class="register-link">Register</a></p>
                     </div>
                 </form>
             </div>
-
             <div class="box register">
-                <h2>Registration</h2>
+                <h2>Trang đăng kí</h2>
                 <form action="#">
                     <div class="input-box">
                         <span class="icon"><i class="fa-solid fa-user"></i></span>
                         <input type="text" required>
-                        <label>Username</label>
+                        <label>Tên đăng nhập</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"><i class="fa-solid fa-envelope"></i></span>
@@ -64,30 +62,128 @@
                     <div class="input-box">
                         <span class="icon"><i class="fa-solid fa-lock"></i></span>
                         <input type="password" required>
-                        <label>Password</label>
+                        <label>Mật khẩu</label>
                     </div>
                     <div class="remember-forgot">
-                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                        <label><input type="checkbox"Tôi đồng ý các điều kiện</label>
                     </div>
-                    <button type="submit" class="btn">Register</button>
+                    <button type="submit" class="btn">Đăng kí</button>
                     <div class="register">
-                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                        <p>Bạn đã có tài khoản?<a href="#" class="login-link">Login</a></p>
                     </div>
                 </form>
             </div>
         </div>
-
-        <div class="header2__container">
-            <div class="header__image">
-                <img src="assests/img/header.png" alt="anhheader">
+    </section>
+        <section class="container">
+            <div class="text">
+                <h2>Bắt Đầu Kì Nghỉ Của Bạn Nào!</h2>
             </div>
+            <div class="box">
+            <div class="icon-box">
+                <div class="items">
+                    <img src="./assests/img/iconship.png" alt="ship">
+                </div>
+                <h4>Du Lịch Thuyền</h4>
+            </div>
+            <div class="icon-box">
+                <div class="items">
+                    <img src="./assests/img/iconfood.png" alt="food">
+                </div>
+                <h4>Nhà Hàng</h4>
 
-            <div class="header__content"></div>
+            </div>
+            <div class="icon-box">
+                <div class="items">
+                    <img src="./assests/img/iconbeach.png" alt="beach">
+                </div>
+                <h4>Du Lịch Biển</h4>
+            </div>
+            <div class="icon-box">
+                <div class="items">
+                    <img src="./assests/img/iconmoutain.png" alt="moutain">
+                </div>
+                <h4>Du Lịch Núi</h4>
+            </div>
         </div>
-
-
-
-
+        </section>
+        <section class="goi" id="goi">
+            <div class="title">
+                <h2>Gói Du Lịch</h2>
+            </div>
+            <div class="goi-content">
+                <div class="goi-box">
+                    <div class="thum">
+                        <img src="./assests/img/vungtau.jpg" alt="vungtau">
+                        <h3>2.000.000 VND</h3>
+                    </div>
+                <div class="diadiem-content">
+                    <div class="noi">
+                        <h4>Vũng Tàu</h4>
+                        <p>2 ngày 1 đêm</p>
+                    </div>
+                </div>
+                </div>
+                <div class="goi-box">
+                    <div class="thum">
+                        <img src="./assests/img/nuibaden.jpg" alt="nuibaden">
+                        <h3>1.500.000 VND</h3>
+                    </div>
+                <div class="diadiem-content">
+                    <div class="noi">
+                        <h4>Tây Ninh</h4>
+                        <p>1 ngày</p>
+                    </div>
+                </div>
+                </div>
+                <div class="goi-box">
+                    <div class="thum">
+                        <img src="./assests/img/vinhhalong.png" alt="vinhhalong">
+                        <h3>3.000.000 VND</h3>
+                    </div>
+                <div class="diadiem-content">
+                    <div class="noi">
+                        <h4>Vịnh Hạ Long</h4>
+                        <p>2 ngày 1 đêm</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="diadiem">
+            <div class="title">
+                <h2>Các Địa Điểm Nổi Tiếng</h2>
+            </div>
+            <div class="diadiem-container">
+                <div class="diadiem">
+                    <img src="./assests/img/tphue.jpg" alt="tphue">
+                    <h4>Thành phố Huế</h4>
+                </div>
+                <div class="diadiem">
+                    <img src="./assests/img/tpdanang.jpg" alt="tpdanang">
+                    <h4>Thành phố Đà Nẵng</h4>
+                </div>
+                <div class="diadiem">
+                    <img src="./assests/img/daophuquoc.jpg" alt="daophuquoc">
+                    <h4>Đảo Phú Quốc</h4>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="footer">
+                <div class="main">
+                    <div class="infor">
+                        <h4>Contact Infor</h4>
+                        <ul>
+                            <li><a href="#">Adress: TPHCM</a></li>
+                            <li><a href="#"><i class="fa-solid fa-phone"></i>Phone: 123456789</a></li>
+                            <li><a href="#"><i class="fa-solid fa-envelope"></i>Email: team3thanhvien@gmail.com</a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook: travel3thanhvien</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <script src="assests/js/script.js"></script>
     </body>
 </html>
